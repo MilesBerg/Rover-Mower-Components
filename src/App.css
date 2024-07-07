@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  height: 1200px;
+  background-color: rgb(150, 150, 150);
+}
+

@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background 0.6s ease;
+    z-index: 1000;
+  }
+  
+  .header.scrolled {
+    background: #000000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 50px; 
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    gap: 20px;
+    font-size: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Share Tech', sans-serif;
+    padding: 1rem;
+    font-weight: bolder;
+    opacity: .8;
+  }
+  
+  .nav-links li a:hover {
+    opacity: 1;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 3%;
+  }
+  
+  @media (max-width: 1290px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #000000;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .nav-links li {
+      padding: 10px 0;
+    }
+  
+    .nav-links li:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+
+    .separator {
+        display: none;
+    }
+  }
+  
